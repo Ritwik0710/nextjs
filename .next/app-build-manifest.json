@@ -1,3 +1,21 @@
 {
-  "pages": {}
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/components/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/components/layout.js"
+    ],
+    "/components/Pages/Admin/AddCourse/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/Pages/Admin/AddCourse/page.css",
+      "static/chunks/app/components/Pages/Admin/AddCourse/page.js"
+    ]
+  }
 }

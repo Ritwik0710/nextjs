@@ -1,1 +1,3 @@
-{}
+{
+  "/components/Pages/Admin/AddCourse/page": "app/components/Pages/Admin/AddCourse/page.js"
+}
