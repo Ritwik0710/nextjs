@@ -1,8 +1,4 @@
 {
   "/not-found": "app/not-found.js",
-  "/page": "app/page.js",
-  "/Login/page": "app/Login/page.js",
-  "/components/Pages/Home/page": "app/components/Pages/Home/page.js",
-  "/components/Pages/Admin/page": "app/components/Pages/Admin/page.js",
   "/components/Pages/Admin/AddCourse/page": "app/components/Pages/Admin/AddCourse/page.js"
 }
