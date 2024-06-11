@@ -184,7 +184,7 @@ function Dashboard() {
       </div>
       <table style={{ top: "300px", left: "200px", position: "fixed" }}>
         {slotdata.map((i) => (
-          <ul>
+          <ul key={i}>
             {i.email}&emsp;&emsp;&emsp;&emsp;{i.Slot}
           </ul>
         ))}
