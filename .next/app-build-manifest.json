@@ -11,6 +11,40 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/Login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Login/page.css",
+      "static/chunks/app/Login/page.js"
+    ],
+    "/components/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/components/layout.js"
+    ],
+    "/components/Pages/Home/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/Pages/Home/page.css",
+      "static/chunks/app/components/Pages/Home/page.js"
+    ],
+    "/components/Pages/Admin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/Pages/Admin/page.css",
+      "static/chunks/app/components/Pages/Admin/page.js"
+    ],
+    "/components/Pages/Admin/AddCourse/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/Pages/Admin/AddCourse/page.css",
+      "static/chunks/app/components/Pages/Admin/AddCourse/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }
