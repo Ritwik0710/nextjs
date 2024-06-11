@@ -1,0 +1,117 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Elements/Navigation/AppNavigation/Navbar.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* styles.css */
+.Navbar_navbar__Rmj1S {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.Navbar_navbar__Rmj1S ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navbar_navbar__Rmj1S li {
+  float: left;
+}
+
+.Navbar_navbar__Rmj1S li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid transparent; 
+}
+
+.Navbar_navbar__Rmj1S li a:hover {
+  background-color: #000000;
+  border-color: white; 
+}
+
+
+
+.Navbar_logo__VxVdh {
+  height: 50px; 
+  margin-right: auto;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Layout/Layout.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Elements/Navigation/AdminNavigation/Navbar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar___Gnd8 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #333; 
+    bottom: 0px;
+    position: fixed;
+    top: 74px;
+  }
+  
+  .Navbar_navbar___Gnd8 a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .Navbar_navbar___Gnd8 a:hover {
+    color: #fff; 
+    background-color: #007bff; 
+  }
+  
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Pages/Admin/AddCourse/addcourse.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/* addcourse.module.css */
+
+.addcourse_form__0KMwA {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Adjust background color as needed */
+  }
+  
+  .addcourse_form__0KMwA h3 {
+    text-align: left;
+  }
+  
+  .addcourse_form__0KMwA label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .addcourse_form__0KMwA input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  .addcourse_buttons__3_opV {
+    text-align: left;
+  }
+  
+ 
+  

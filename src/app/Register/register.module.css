@@ -1,0 +1,19 @@
+
+.form{
+  display: inline-flex;
+  align-items: flex-end;
+  flex-direction: column;
+  left: 500px;
+  top: 200px;
+  gap: 10px;
+  position: fixed;
+}
+
+.buttons{
+position: fixed;
+top: 400px;
+gap: 90px;
+left: 585px;
+display: flex;
+padding: 5px;
+}

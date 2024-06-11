@@ -1,0 +1,73 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Elements/Navigation/AuthNavigation/Navbar.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* styles.css */
+.Navbar_navbar__bRCO_ {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .Navbar_navbar__bRCO_ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .Navbar_navbar__bRCO_ li {
+    float: left;
+  }
+  
+  .Navbar_navbar__bRCO_ li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid transparent; 
+  }
+  
+  .Navbar_navbar__bRCO_ li a:hover {
+    background-color: #000000;
+    border-color: white; 
+  }
+  
+  
+  
+  .Navbar_logo___Ltnk {
+    height: 50px; 
+    margin-right: auto;
+  }
+  
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/Login/login.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+
+.login_form__EvtNV{
+  
+    display: inline-flex;
+    align-items: flex-end;
+    flex-direction: column;
+    left: 500px;
+    top: 200px;
+    gap: 10px;
+    position: fixed;
+}
+.login_image__f2uMY{
+  height: 50px;
+}
+.login_buttons__qhRXS{
+  position: fixed;
+  top: 300px;
+  gap: 90px;
+  left: 585px;
+  display: flex;
+  padding: 5px;
+}
+.login_forgotpw__76Oe1{
+  top: 350px;
+    position: fixed;
+    left: 590px;
+}
