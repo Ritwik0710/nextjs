@@ -85,7 +85,7 @@ function Bookings() {
         {Table(
           arr
             .map((i) => [
-              <Checkbox id={i[4]} handleChange={(val) => {
+              <Checkbox key={i[4]} id={i[4]} handleChange={(val) => {
                 setCheckboxArr((prev)=>  val
                   ? [...prev, i[4]]
                   : prev.filter((x) => x !== i[4])
