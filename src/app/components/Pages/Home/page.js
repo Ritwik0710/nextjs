@@ -18,6 +18,7 @@ import {
 } from "@/app/Firebase";
 import { doc, onSnapshot } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import Table from "../../Elements/Table";
 
 const generateSlots = (slotlength) => {
   let slotList = [];
@@ -56,7 +57,7 @@ function Dashboard() {
   const [courses, setCourseList] = useState([]);
   useEffect(() => {
     getQuery("course", "coursename", "!=", NaN).then((value) => {
-      setCourseList(value.map((i) => i.coursename));
+      setCourseList(value.map((i) => i.data.coursename));
     });
   },courses );
   let hmap = new Map();
@@ -68,7 +69,7 @@ function Dashboard() {
     await getData("course/" + course.courseName).then((value) => {
       let slotList = generateSlots(value.slotlength);
       slotList.map((i) => hmap.set(i, true));
-      booked.map((i) => hmap.set(i, false));
+      booked.map((i) => hmap.set(i.time, false));
 
       slotList.forEach((i) => {
         if (hmap.get(i) == true) available.push(i);
@@ -84,7 +85,7 @@ function Dashboard() {
   const onNextSlotResponse = (querySnapshot) => {
     const booked = [];
     querySnapshot.forEach((doc) => {
-      booked.push(doc.data().time);
+      booked.push(doc.data());
     });
     console.log(booked);
     resetSlots(booked);
@@ -133,7 +134,7 @@ function Dashboard() {
     //   "slots/";
     // console.log("booking", path);
     // addData(data, path, selectedslot.slot);
-    addAuto(data1, "slots/", data1.email);
+    addData(data1, "slots/", data1.email+ data1.coursename+`${day.$D}${day.$M + 1}${day.$y}`+data1.time);
   };
   return (
     <Layout>
@@ -182,13 +183,14 @@ function Dashboard() {
           {Button("Book Slot", " ", selectedslot.book, onbook)}
         </div>
       </div>
-      <table style={{ top: "300px", left: "200px", position: "fixed" }}>
-        {slotdata.map((i) => (
+      <div style={{ width:"900px" ,top: "300px", left: "200px", position: "fixed" }}>
+        {Table(slotdata.map((i)=>[i.coursename,i.email,i.time]),["Course","User","Slot"])}
+        {/* {slotdata.map((i) => (
           <ul key={i}>
-            {i.email}&emsp;&emsp;&emsp;&emsp;{i.Slot}
+            {i.email}&emsp;&emsp;&emsp;&emsp;{i.time}
           </ul>
-        ))}
-      </table>
+        ))} */}
+      </div>
 
       <div></div>
     </Layout>

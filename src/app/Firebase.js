@@ -10,6 +10,7 @@ import {
   collection,
   addDoc,
   onSnapshot,
+  deleteDoc,
   setDoc,
   doc,
   getDoc,
@@ -52,7 +53,9 @@ export const initFirebase = () => {
   db = getFirestore(app);
   auth = getAuth();
 };
-
+export const deleteData =async(collec,id)=>{
+  await deleteDoc(doc(db, collec, id));
+}
 export const userDetails = ()=>onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
@@ -84,7 +87,7 @@ export const getQuery = async (path, field, operator, value) => {
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
-    arr.push(doc.data());
+    arr.push({data:doc.data(),id:doc.id});
     console.log(doc.id, " => ", doc.data());
   });
 

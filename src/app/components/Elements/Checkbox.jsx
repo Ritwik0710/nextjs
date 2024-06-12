@@ -1,14 +1,24 @@
-function Checkbox() {
+import { forwardRef, useEffect, useState } from "react";
+
+const Checkbox = (props) => {
+  const [val, setval] = useState(false);
+
+  useEffect(() => {
+    props.handleChange?.(val);
+  }, [val]);
+
   return (
-    <div  className="form-check">
+    <div className="form-check">
       <input
-        style ={{"borderColor" : "lightgrey"}}
+        style={{ borderColor: "lightgrey" }}
         className="form-check-input"
         type="checkbox"
-        value=""
-        id="flexCheckDefault"
+        id={props.id}
+        value={val}
+        onChange=
+        {() => setval(!val)}
       />
     </div>
   );
-}
+};
 export default Checkbox;
