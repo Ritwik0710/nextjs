@@ -1,5 +1,5 @@
 "use client";
-import AppNavigation from "./components/Elements/Navigation/AppNavigation/page";
+import AppNavigation from "./components/Elements/Navigation/AuthNavigation/page";
 export default function Page() {
   return (
     <div>
